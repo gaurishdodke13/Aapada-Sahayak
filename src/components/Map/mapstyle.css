@@ -1,0 +1,59 @@
+.leaflet-container{
+    height: 600px;
+    width: 1000px;
+}
+
+.type-resource{
+    display: flex;
+    height: 30px;
+    padding:10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.type-resource select {
+    color: black;
+}
+
+select{
+    font-size: 16px;
+    height: 30px;
+    outline: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Change text color of dropdown options in select elements */
+select option {
+    color: black;
+}
+
+
+.leaflet-control-zoom-in i,
+.leaflet-control-zoom-out i {
+    color: black !important;
+}
+
+
+.body-submit-btn{
+margin-top: 10px;
+padding: 10px;
+font-size: 20px;
+background-color: rgb(23, 122, 28);
+border-radius: 16px;
+outline: none;
+border: none;
+color: aliceblue;
+}
+
+.body-submit-btn:hover{
+    background-color: rgb(35, 166, 39);
+    cursor: pointer;
+}
+
+.sendRequest{
+    
+}
