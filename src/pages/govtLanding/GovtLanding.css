@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+body{
+    overflow-x: hidden;
+    background-color: white;
+    
+}
+
+.navbar{
+    height: 6rem;
+    width: 100vw;
+    background-color: #131418;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+/*Styling logo*/
+.logo{
+    padding:1vh 1vw;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    margin-left: 2px;
+}
+
+.logoLeft img{
+    height: 2.5rem;
+}
+
+.logoRight{
+    
+    margin-left: 5px;
+    height: 3.5rem;
+    width: 15rem;
+    border-left: solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.logoName{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    font-weight:500;
+    padding-bottom: 10px;
+    
+}
+
+.midnav{
+   
+    flex: 2;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navopt{
+    border-bottom: 1px solid transparent;
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    padding-top: 6rem;
+    width: auto;
+    overflow-y: auto;
+    padding-bottom: 16px;
+    
+}
+
+.bodyContainer .leaflet-container {
+    height: 600px; /* Set your desired height */
+     /* Make the map container 100% width of its parent */
+    position: sticky; /* Keep the map sticky within bodyContainer */
+    top: 0; /* Stick it to the top of the container */
+}
+
+.rightMap{
+    flex: 1;
+}
+
+.leftDash{
+    flex: 1;
+}
