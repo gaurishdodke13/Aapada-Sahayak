@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+  /* color: white; */
+}
+
+.main-box {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Adjust alignment to stretch */
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #121228, #000);
+}
+
+.left {
+  flex: 1;
+  background: linear-gradient(to bottom, #121228, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #121228, #000);
+  margin-top: 2px;
+}
+
+.left-head {
+  width: 100%;
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-bottom {
+  flex: 2.5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  background-image: url("../../image/Rsignup.png");
+}
+
+.glass-container {
+  display: flex;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  border-radius: 10px; /* Adjust the border radius as needed */
+  padding: 20px; /* Add padding as required */
+  width: 225px; /* Set the width */
+  height: 45px; /* Set the height */
+  font-weight: bold !important; /* Set the font weight */
+  font-size: 16px; /* Adjust font size as needed */
+  font-family: "Rubik", sans-serif; /* Set the font family */
+  color: white;
+  backdrop-filter: blur(10px); /* Adjust the blur effect */
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-container2 {
+  display: flex;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  border-radius: 10px; /* Adjust the border radius as needed */
+  padding: 20px; /* Add padding as required */
+  width: 500px; /* Set the width */
+  height: 45px; /* Set the height */
+  font-weight: bold !important; /* Set the font weight */
+  font-size: 16px; /* Adjust font size as needed */
+  font-family: "Rubik", sans-serif; /* Set the font family */
+  color: white;
+  backdrop-filter: blur(10px); /* Adjust the blur effect */
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+.contact {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: -10px;
+  margin-bottom: 20px;
+  
+}
+
+.head {
+  color: white;
+}
+.contact form label {
+  display: block;
+}
+.contact form p {
+  margin: 0;
+}
+
+.address-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  
+}
+
+.address-container .Address-input{
+  width: 100%;
+  
+}
+
+.choose-from-map{
+  margin: 0 10px;
+  margin-bottom: 10px;
+  position: relative;
+  /* height: 100%; */
+  top: -2%;
+  display: flex;
+  /* right: -1%; */
+  background-color: chocolate;;
+  padding: 8px;
+  border-radius: 20px;
+  color:white;
+  font-size: 1rem;
+  cursor: pointer;
+  /* padding: 10 0; */
+  /* letter-spacing: 5px; */
+  /* top: -2%; */
+}
+
+.choose-from-map:hover{
+  background-color: rgb(226, 114, 34);
+  border: 1px solid white;
+}
+
+
+.contact form .full {
+  grid-column: 1/3;
+}
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+}
+
+.addbtn {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  border: 0;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-size: 13px;
+  color: white;
+  margin-top: 5px;
+}
+
+.addbtn:hover,
+.addbtn:focus {
+  color: #fff;
+  outline: 0;
+  transition: all 0.5s ease-out;
+}
+
+.removebtn {
+  background-color: chocolate;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+label {
+  color: white;
+}
+
+input,
+textarea {
+  border-radius: 20px;
+  /* background-color: #d9d9d9; */
+}
+
+.drop {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(5px);
+  color: white; /* Adjust text color */
+  padding: 5px;
+  position: relative;
+  background-color: transparent;
+}
+
+.drop option {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  color: #000;
+}
+
+.formbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.rightbox {
+  display: flex;
+  flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+  border: none;
+  padding: 5px; /* Adjust padding */
+  margin-bottom: 10px;
+  width: 100%; /* Adjust width to consider padding */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(5px);
+  color: white; /* Adjust text color */
+}
+
+/* Submit button style */
+.registerbtn {
+  background-color: chocolate;
+  border: none;
+  width: 350px;
+  border-radius: 26px;
+  padding: 10px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: transform 0.5s ease-in-out;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registerbtn:hover,
+.registerbtn:active {
+  transform: scale(1.1); 
+}
+
+.left-bottom {
+  flex: 2.5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.up {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  background-image: url(${r2});
+  background-size: cover; /* Adjust the image size */
+  background-position: center;
+}
+
+.upLeft{
+  flex: 1;
+}
+
+.upRight{
+  flex: 1;
+}
+
+.down {
+  flex: 1;
+  width: 100%;
+  background-image: url(${r1});
+  background-size: cover; /* Adjust the image size */
+  background-position: center;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  .main-box {
+    flex-direction: column; /* Stack columns for smaller screens */
+  }
+
+  .right {
+    display: block; /* Show the right column for smaller screens */
+  }
+
+  .glass-container2 {
+    width: 80%; /* Update the width for mobile devices */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

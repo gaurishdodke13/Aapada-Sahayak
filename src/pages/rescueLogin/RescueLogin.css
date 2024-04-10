@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outermainc{
+    background: #121228;
+    background: linear-gradient(to bottom, #121228, #000);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+}
+.main {
+    
+    /* height: 90vh; */
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex: 1;
+    width: 43%;
+    margin: auto;
+    background: linear-gradient(to bottom, #0c0e2f, #000);
+    color: #fff;
+    border: none;
+}
+
+.left-container {
+    flex: 1;
+    background: linear-gradient(to bottom, #0c0e2f, #000);
+}
+
+
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    .left-out {
+      display: none; /* Hide the left container */
+    }
+  
+    .right-container {
+      display: block; /* Display only the right container */
+      width: 100%; /* Make it take full width */
+    }
+  }
+  
+  /* For larger screens, display both containers */
+  @media (min-width: 769px) {
+    .left-out {
+      display: flex;
+    }
+  
+    .right-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: auto;
+    }
+  }
+  
+
+.right-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    overflow: auto;
+    background: linear-gradient(to bottom, #121228, #000);
+    /* background: linear-gradient(to bottom, #0f123b, #000); */
+    
+}
+.right-container__h2 {
+    font-size:1.5rem;
+    color: chocolate;
+    font-weight: bolder;
+}
+
+.right-container-box{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.right-container__p {
+    opacity: 0.5;
+    margin: 5px 0 10px;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, .5);
+}
+.right-container__input {
+    width: 350px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    height: 48px;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.right-container__input:focus,
+.right-container__input:active {
+  border: 1px solid white; /* Set the border style for focus or active state */
+}
+
+
+.right-container__label {
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+.right-container__bottom-text {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+.right-container__bottom-text > strong {
+    color: #fff;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn {
+    background-color: chocolate;
+    border: 1px solid chocolate;
+    width: 350px;
+    border-radius: 20px;
+    padding: 10px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.1); /* Scale up on hover or click */
+}
+
+.left-out{
+    display: flex;
+    flex: 1; /* Allow left-out to take full available space */
+    min-height: 100vh; /* Ensure left-out takes the full viewport height */
+    overflow-y: auto; 
+    flex-direction: column;
+    align-items: flex-start;
+    /* background: linear-gradient(to bottom, #0f123b, #000); */
+    
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.left-head {
+    
+    width: 100%;
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tagline{
+    font-size: 20px;
+    color: chocolate;
+    font-weight: bolder;
+    padding: 16px 16px;
+
+}
+
+.left-bottom {
+    flex: 2.5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.up {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    background-image: url(${r2});
+    background-size: cover; /* Adjust the image size */
+    background-position: center;
+}
+
+.upLeft{
+    flex: 1;
+}
+
+.upRight{
+    flex: 1;
+}
+
+.down {
+    flex: 1;
+    width: 100%;
+    background-image: url(${r1});
+    background-size: cover; /* Adjust the image size */
+    background-position: center;
+}
+
+.glass-container {
+    display: flex;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    border-radius: 10px; /* Adjust the border radius as needed */
+    padding: 20px; /* Add padding as required */
+    width: 225px; /* Set the width */
+    height: 45px; /* Set the height */
+    font-weight: bold !important; 
+    font-size: 16px; 
+    font-family: 'Rubik', sans-serif; 
+    color: white;
+    backdrop-filter: blur(10px); 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.glass-container2 {
+    display: flex;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    border-radius: 10px; 
+    padding: 20px; 
+    width: 550px; 
+    height: 45px; 
+     
+    font-size: 12px; 
+    font-family: 'Rubik', sans-serif; 
+    color: white;
+    backdrop-filter: blur(10px); 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.left-glass{
+    padding-right: 2px;
+    margin-right: 10px;
+}
+
+.left-glass img{
+    padding-top: 5px;
+}
+
+  
+/* ... (previous CSS remains unchanged) */
+
+.glass-input {
+    display: block;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.05)
+    );
+     /* Adjust the border radius as needed */
+    padding: 10px 20px; /* Add padding as required */
+    width: 100%; /* Set the width */
+    font-weight: bold !important; /* Set the font weight */
+    font-size: 16px; /* Adjust font size as needed */
+    font-family: 'Rubik', sans-serif; /* Set the font family */
+    color: white;
+    backdrop-filter: blur(10px); /* Adjust the blur effect */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+  
+
+  .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }

@@ -1,0 +1,585 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* color: #f2f5f7; */
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  /* font-weight: 300; */
+}
+body {
+  overflow-x: hidden;
+  background-color: #131418;
+}
+
+.main {
+  display: flex;
+}
+.navbar {
+  color: #f2f5f7;
+  height: 6rem;
+  width: 100vw;
+  background-color: #131418;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+}
+
+/*Styling logo*/
+.logo {
+  padding: 1vh 1vw;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.logoLeft img {
+  height: 3rem;
+}
+
+.line {
+  height: 4rem;
+  width: 3px;
+  background-color: white;
+  margin-left: 5px;
+}
+.logoRight {
+  margin-left: 1px;
+  height: 3.5rem;
+  width: 15rem;
+  /* border-left: solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logoName {
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.midnav {
+  flex: 1;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navopt {
+  border-bottom: 1px solid transparent;
+  list-style-type: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.user-name {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+}
+
+.midnav .navopt a {
+  text-decoration: none;
+  color: white;
+}
+
+.navopt:hover {
+  border-bottom: 1px solid white;
+}
+
+.tag-line {
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-size: 0.6rem;
+  color: white;
+  font-weight: 500;
+}
+
+.leftText {
+  text-align: left;
+  padding-left: 8px;
+}
+/*Styling Links*/
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 88vw;
+  padding: 0 0.7vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+/*Styling Buttons*/
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  padding-right: 1.5em;
+  margin-right: 2em;
+}
+
+.gov-button {
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255, 0.3),
+    rgba(19, 20, 24, 0.05)
+  );
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  margin-left: 2vw;
+  font-size: 0.7rem;
+  cursor: pointer;
+  color: white;
+  /* width: ; */
+}
+.gov-button:hover {
+  border: 1.5px solid #f2f5f7;
+  transition: all ease-in-out 350ms;
+}
+.rescue-button {
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255, 0.3),
+    rgba(19, 20, 24, 0.05)
+  );
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  margin-left: 2vw;
+  font-size: 0.7rem;
+  cursor: pointer;
+  color: white;
+}
+.rescue-button:hover {
+  border: 1.5px solid #f2f5f7;
+  transition: all ease-in-out 350ms;
+}
+
+.heroContainer {
+  padding-top: 6rem;
+}
+
+.hero {
+  height: 500px;
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  height: 480px; /* Adjust the height according to your design */
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: -80px; /* Adjust the distance of the V shape from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 80px 50px 0 50px; /* Adjust the size of the V shape */
+  border-color: transparent transparent transparent transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.7); /* Color of the V shape */
+  z-index: 1; /* Ensure the V shape is behind the text */
+}
+
+.heroText {
+  height: 80px;
+  width: auto;
+  font-size: 4em;
+}
+
+.textbottom {
+  font-size: 32px;
+  position: absolute;
+  bottom: 180px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 800;
+}
+
+.aboutUs {
+  padding-top: 0px;
+  margin-top: 0px;
+  height: 500px;
+  width: auto;
+  background: linear-gradient(700deg, #131418, #0b143bc9, #f36e3e);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.govtcontainer {
+  display: flex;
+  height: 450px;
+  margin: 5px;
+}
+
+.govTitle {
+  padding-top: 42px;
+  display: flex;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 74px;
+}
+.points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listPoint {
+  padding-top: 16px;
+
+  font-size: larger;
+  list-style-type: none;
+}
+
+.listPoint .MuiSvgIcon-root {
+  margin-right: 8px; /* Adjust the margin as needed */
+}
+
+.subpoint {
+  color: #f2f5f7b1;
+}
+.rightSide {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.rightSide img {
+  margin-right: 20px;
+  border-radius: 30px;
+  height: 380px;
+  width: 500px;
+}
+
+.rescueimg {
+  margin-top: 92px;
+}
+
+.govtTitle {
+  color: white;
+}
+
+.info {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 70rem;
+  padding-bottom: -20px;
+}
+
+.left-info,
+.right-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-info {
+  position: relative;
+}
+
+.right-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.info-img {
+  height: 350px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 40px;
+  position: absolute;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.left-info .info-img:nth-child(1) {
+  top: 60px;
+  left: 240px;
+  z-index: 3;
+}
+
+.left-info .info-img:nth-child(2) {
+  top: 380px;
+  left: calc(50% - 300px);
+  z-index: 2;
+}
+
+.left-info .info-img:nth-child(3) {
+  bottom: 60px;
+  left: 240px;
+  z-index: 1;
+}
+
+.outline {
+  margin-left: -50px;
+  margin-top: -380px;
+  height: 500px;
+  width: 550px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.hrline {
+  width: 400px;
+  height: 8px;
+  background-color: #f04d1a;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  color: transparent;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 500px;
+  padding: 20px;
+}
+
+.points {
+  width: 500px;
+  padding: 2px;
+  margin-top: 20px;
+}
+
+.points ul {
+  padding-left: 0;
+}
+
+.points ul li {
+  list-style: none;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
+  font-size: 1.5em;
+}
+
+.scroller {
+  width: 100%;
+  height: 600px; /* Set the height based on your requirement */
+  overflow-y: scroll;
+  position: relative;
+}
+
+.timeline-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.timeline {
+  width: calc(100% - 40px); /* Consider padding in width calculations */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.timeline-card {
+  width: 70%;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.timeline-card:nth-child(even) {
+  align-self: flex-end;
+}
+
+.timeline-card.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.timeline-card:not(.show) {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90rem;
+  background-color: #0b143bc9;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 0px;
+}
+
+.card {
+  padding: 40px;
+  padding-top: 10px;
+  width: 400px;
+  background: linear-gradient(
+    to top,
+    rgb(255, 255, 255, 0.3),
+    rgba(19, 20, 24, 0.05)
+  );
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.card-image img {
+  width: 140px; /* Adjust the width of the icon */
+  height: 400px; /* Adjust the height of the icon */
+  object-fit: contain; /* Maintain aspect ratio of the icon */
+}
+
+.card-info {
+  margin-top: -40px;
+}
+
+/* Define the hover effect */
+.card:hover {
+  transform: translateY(-10px); /* Adjust the distance moved on hover */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.agencyname {
+  margin-right: 16px;
+  font-size: 16px;
+}
+
+.log-out-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 24px;
+  transition: background-color 0.3s;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255, 0.3),
+    rgba(19, 20, 24, 0.05)
+  );
+}
+
+@media only screen and (max-width: 768px) {
+  .midnav {
+    display: none;
+  }
+
+  .card-grid {
+    display: block;
+  }
+
+  .card {
+    width: 420px;
+    margin-bottom: 20px;
+    /* Add other styles for the card appearance on mobile */
+  }
+
+  .scroll {
+    height: 230rem;
+  }
+
+  .info {
+    height: 100rem;
+  }
+
+  .services {
+    margin-top: -190px;
+  }
+
+  .left-info {
+    display: none;
+  }
+
+  .info {
+    height: 60rem;
+    padding-bottom: -10px;
+  }
+
+  .aboutusTag {
+    margin-left: 20px;
+  }
+
+  .hrline {
+    margin-left: 20px;
+  }
+
+  .last {
+    position: fixed;
+  }
+
+  .scroll {
+  }
+}
+
+.status-btn1 {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  color: white;
+  margin: 5px;
+}
+
+.pending {
+  background-color: #ffc107; /* yellow for pending status */
+}
+.completed {
+  background-color: #28a745; /* green for completed status */
+}
+.accepted {
+  background-color: #28a745; /* green for completed status */
+}
+.rejected {
+  background-color: #dc3545; /* red for rejected status */
+}

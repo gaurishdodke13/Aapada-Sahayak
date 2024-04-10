@@ -1,0 +1,42 @@
+$background_color: #121029;
+
+.map-page-container{
+    color: white;
+    margin: 0;
+    background-color: $background_color;
+    .column-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+       
+
+        
+      
+    }
+
+    @media screen and (max-width: 767px) {
+        .map-page-header {
+          display: none;
+        }
+
+        .sidebar {
+            display: none;
+          }
+        
+          
+          .mobile-only {
+            display: block;
+            width: 100%;
+            /* Add styling for the mobile header */
+          }
+      }
+
+      @media screen and (min-width:767px){
+        .mobile-only{
+            display: none;
+        }
+      }
+
+    
+}

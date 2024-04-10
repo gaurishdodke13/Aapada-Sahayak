@@ -1,0 +1,38 @@
+.request-body-card{
+    margin: 10px 0;
+    background-color: white;
+    color: black;
+    width: 100%;
+
+    .request-body{
+        padding: 10px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+        .action-btn{
+            display: flex;
+            flex-direction: row;
+            
+
+            .request-action-btn{
+                background-color: rgb(7, 106, 228);
+                margin: 20px;
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                cursor: pointer;
+                margin: 0 10px;
+            }
+
+            .request-status-btn{
+            background-color: #F04D1A;
+            }
+    
+        }
+    }
+
+
+}
