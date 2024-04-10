@@ -1,0 +1,132 @@
+.MapRequestForm-container{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    // max-width: 450px;
+    // background-color: gray;
+    margin-right:1rem;
+
+    
+    .input-section{
+        position: relative;
+        color: white;
+        min-width: 400px;
+        font-size: 1.5rem;
+        .input-Title{
+        margin-bottom: 5px;
+        padding: 0;
+    
+        }
+        input{
+            margin: 20px;
+            // background-color: red;
+            // box-shadow: 2px 2px 5px rgb(231, 31, 31);
+            padding:5px;
+            font-size: 1.2rem;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            margin: 0;
+            width: 100%;
+
+           
+        }
+
+        .disType-options{
+            background-color: #121029;
+            display: none;
+            // background-color: rgb(3, 0, 0);
+            z-index: 2;
+            position: absolute;
+            border-radius: 10px;
+            overflow-y: scroll;
+            scrollbar-width: thin;
+            scrollbar-color: #c11515 transparent;
+            cursor: pointer;
+            
+        }
+        
+        .disType-options li{
+            min-width: 450px;
+            background-color: #121029;
+
+        }
+        input:focus+.disType-options{
+            display: block;
+            max-height: 200px;
+            // scrollbar-width: thin;
+
+           
+        }
+        #request-submit{
+        margin-top: 20px;
+        background-color: #F04D1A;   
+        color: white;
+
+        &:hover{
+            background-color: #cb3f14;
+            cursor: pointer;
+        }
+
+        }
+    }
+}
+.submit_data {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    background-color: #f04d1a;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: -10px;
+  }
+
+  .req_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    //box-shadow: 0 4px 8px rgb(255, 255, 255);
+    // box-shadow: 3px 15px 15px 0px rgba(251, 249, 249, 0.4);
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  .req_form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    gap: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    // box-shadow: 0 0 8px rgba(255, 255, 255, 0.829),
+    //             0 0 8px rgba(255, 255, 255, 0.433);
+    box-shadow: 3px 15px 15px 0px rgba(251, 249, 249, 0.4);
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+
+  .req_form_box{
+
+    // border: 1px solid white;
+    padding: 20px;
+  }
+
+  
+
+  .input-section {
+    
+    margin-top: 5px;
+    white-space: pre-line;
+    
+  }
+
+  h4{
+    margin:10px;
+  }
+
+  thead{
+  border: 1px solid black;
+  }

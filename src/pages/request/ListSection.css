@@ -1,0 +1,68 @@
+/* RequestCard.css */
+.list-section-input{
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.request-card {
+    /* border: 1px solid #ddd; */
+    box-shadow: 3px 8px 8px 0px rgba(251, 249, 249, 0.2);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    /* width: 200px; */
+    text-align: center;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+     /* Adjust as needed for spacing between cards */
+  }
+
+  .request-card:hover {
+    transform: scale(1.001);
+  }
+  
+  .request-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.194);
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  
+  .request-card .body{
+  display:flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+
+  }
+
+  .request-card .body .agency-info{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .collaborate-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .collaborate-btn:hover {
+    background-color: #0056b3;
+  }
+  
