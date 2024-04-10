@@ -1,0 +1,181 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.tab {
+  background-color: #121029;
+  font-size: 1.5rem;
+  
+}
+table {
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+  border-collapse: collapse;
+  border-radius: 16px;
+}
+
+table,
+td,
+th {
+  padding: 15px;
+}
+
+th {
+  background-color: #d9d9d98f;
+  /* font-size: 2rem; */
+}
+
+td {
+  color: #0c1024;
+  background-color: #ffff;
+  /* font-size: 1.6rem; */
+}
+
+.res {
+  background-color: #f04d1a;
+  color: #ffff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+  th,
+  td {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  .res {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+
+.side {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 1.6rem;
+  width: 280px;
+  cursor: pointer;
+  height: 64px;
+  font-weight: 700;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  width: 80%;
+}
+.fa-solid {
+  padding: 10px;
+}
+.page {
+  display: flex;
+  width: 100%;
+  /* height: 1440px; */
+  background-color: #121029;
+}
+.page_blur {
+  height: 1440px;
+  display: flex;
+  width: 100%;
+  filter: blur(10px); /* Initial state: no blur */
+  transition: filter 2s ease;
+}
+
+select {
+  background-color: #a1a1a1;
+  cursor: pointer;
+}
+option {
+  background-color: #fff;
+  color: black;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(217, 217, 217);
+  width: 500px;
+  height: 400px;
+  padding: 60px;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Updated to position in the top-right corner */
+  font-size: 20px;
+  cursor: pointer;
+  color: #aaa;
+  background-color: #ff0000bc;
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: rgb(0, 0, 0);
+}
+option:first {
+  color: #999;
+}
+.modal input[type="text"] {
+  color: #121029;
+  background-color: #aaa;
+  width: 300px;
+  height: 200px;
+}
+.modal_input {
+  width: 300px;
+  height: 200px;
+  font-weight: 1000;
+  background-color: #aaa;
+  padding: 10px;
+  color: #121029;
+}
+
+.modal select {
+  font-size: 1.1rem;
+  width: 300px;
+  height: 50px;
+
+}
+
+.modal input[type='text']{
+  width: 300px;
+  height: 50px;
+
+}
+
+.modal input[type='number']{
+  width: 300px;
+  height: 50px;
+  margin-top: 10px;
+  color: #0c1024;
+}
+.submit_data {
+  width: 200px;
+  height: 30px;
+  color: #fff;
+  background-color: #f04d1a;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
