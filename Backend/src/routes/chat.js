@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const isAuthenticated_1 = __importDefault(require("../utils/isAuthenticated"));
+const ChatController_1 = require("../controllers/ChatController");
+const router = (0, express_1.Router)();
+router.post('/', isAuthenticated_1.default, ChatController_1.createChat);
+router.put('/', isAuthenticated_1.default, ChatController_1.addToChat);
+router.post('/:chatId', isAuthenticated_1.default, ChatController_1.sendMessage);
+router.get('/chats', isAuthenticated_1.default, ChatController_1.chatList);
+router.get('/:chatId', isAuthenticated_1.default, ChatController_1.getChat);
+router.get('/:chatId/messages', isAuthenticated_1.default, ChatController_1.getMessages);
+router.get('/findchat', isAuthenticated_1.default, ChatController_1.findChat);
+// router.post('/', createChat);
+// router.put('/', addToChat);
+// router.post('/:chatId', sendMessage);
+// router.get('/chats', chatList);
+// router.get('/:chatId', getMessages);
+exports.default = router;
